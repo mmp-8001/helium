@@ -1,0 +1,7 @@
+$is_rtl : true;
+@import "theme";
+
+@include font-iransans;
+* {
+    font-family: IRANSans, Tahoma, serif;
+}

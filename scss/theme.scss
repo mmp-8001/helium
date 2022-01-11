@@ -1,0 +1,31 @@
+@import "core/bootstrap";
+@import "colors";
+@import "core/fonts";
+
+*, ::before, ::after {
+  transition: inherit;
+}
+
+body, html {
+  direction: #{if($is_rtl, rtl, ltr)};
+  text-align: #{if($is_rtl, "right", "left")};
+}
+
+body {
+  background-color: $background-color;
+  color: $main_text-color;
+  overflow-x: hidden;
+
+  #main {
+    margin-top: 120px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  box-sizing: border-box;
+}
