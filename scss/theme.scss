@@ -8,6 +8,7 @@
 @import "icon";
 @import "core/fullpage.min";
 @import "components/menu";
+@import "components/main";
 
 *, ::before, ::after {
   transition: inherit;
@@ -42,11 +43,12 @@ div {
   flex-direction: row;
 
   #menu {
-    flex-basis: 90px;
+    flex-basis: 130px;
     background-color: rgb(92, 45, 122);
   }
 
   #main {
     flex-grow: 1;
+    overflow: auto;
   }
 }

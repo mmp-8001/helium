@@ -1,0 +1,88 @@
+#main {
+  #content {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  #back {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    #svgPath {
+      transition-delay: 500ms;
+      transition: all 500ms;
+      opacity: 0;
+    }
+  }
+
+  #contain {
+    position: relative;
+
+  }
+
+  #page1 {
+    padding-top: 40%;
+    background-color: red;
+  }
+
+  #page2 {
+    padding-top: 63%;
+    position: relative;
+
+    #movie {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/film-cover.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      margin-top: 7.8%;
+    }
+  }
+
+  #page3 {
+    padding-top: 65%;
+    position: relative;
+
+    .page-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      .images {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .image-2, .image-1 {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-1 img {
+        width: 70%;
+        transform: translate(6%, 14%);
+      }
+
+      .image-2 img {
+        width: 60%;
+        transform: translate(-3%, -7%);
+      }
+    }
+  }
+
+  #back {
+    position: absolute;
+    top: 0;
+  }
+}

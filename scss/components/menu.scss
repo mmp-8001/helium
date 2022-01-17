@@ -13,7 +13,7 @@
 
   .contact {
     flex-basis: 25%;
-    font-size: 36px;
+    font-size: 45px;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -45,13 +45,13 @@
 
     .link {
       position: relative;
-      width: 45px;
-      height: 45px;
+      width: 60px;
+      height: 60px;
       border-radius: 100%;
       cursor: pointer;
       transition: background-color 250ms ease-in-out;
       background-color: rgb(255, 255, 255);
-      font-size: 22px;
+      font-size: 26px;
 
       &:not(&:last-child):after {
         content: "";
