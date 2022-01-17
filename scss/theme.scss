@@ -43,12 +43,12 @@ div {
   flex-direction: row;
 
   #menu {
-    flex-basis: 130px;
+    flex-basis: 5%;
     background-color: rgb(92, 45, 122);
   }
 
   #main {
-    flex-grow: 1;
+    flex-basis: 95%;
     overflow: auto;
   }
 }
