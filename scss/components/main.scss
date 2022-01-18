@@ -1,6 +1,16 @@
+#man2, #man1, #man3, #man4 {
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+
 #main {
   background-image: url("../images/background.png");
   background-repeat: repeat;
+
+  #content {
+    overflow: hidden;
+  }
 
   #back {
     width: 90%;
@@ -63,7 +73,7 @@
     .logo {
       flex-grow: 1;
       position: relative;
-      transform: scale(1.3);
+      transform: scale(1.2);
 
       img {
         left: 50%;
@@ -106,6 +116,7 @@
 
   #page3 {
     display: flex;
+
     .image {
       width: 50%;
       padding-top: 10%;
@@ -130,6 +141,7 @@
 
   #page4 {
     display: flex;
+
     .image {
       width: 50%;
       padding-top: 20%;
@@ -149,6 +161,7 @@
 
   #page5 {
     display: flex;
+
     .image {
       width: 50%;
       padding-top: 23%;
@@ -171,6 +184,7 @@
 
   #page6 {
     display: flex;
+
     .image {
       width: 50%;
       padding-top: 17%;
