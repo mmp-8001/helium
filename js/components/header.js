@@ -2,8 +2,8 @@ const man1 = document.getElementById("man1");
 const man2 = document.getElementById("man2");
 const man3 = document.getElementById("man3");
 const man4 = document.getElementById("man4");
-const vy = document.body.clientHeight;
-const vx = document.body.clientWidth;
+var vy = document.body.clientHeight;
+var vx = document.body.clientWidth;
 const touch = false;
 
 function generateAnimation(x, y) {
