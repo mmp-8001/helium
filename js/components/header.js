@@ -4,7 +4,7 @@ const man3 = document.getElementById("man3");
 const man4 = document.getElementById("man4");
 var vy = document.body.clientHeight;
 var vx = document.body.clientWidth;
-const touch = false;
+const touch = true;
 
 function generateAnimation(x, y) {
     let dx = ((vx / 2 - x) / vx) * 1.6;

@@ -7,6 +7,7 @@
 #main {
   background-image: url("../images/background.png");
   background-repeat: repeat;
+  height: 100%;
 
   .tile {
     opacity: 0;
@@ -21,24 +22,25 @@
   }
 
   #content {
-    overflow: hidden;
+    position: relative;
   }
 
-  #back {
+  #back, #back2 {
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
+    position: absolute;
+    top: 17.13%;
 
-    #svgPath {
+    #svgPath, #svgPath2 {
       transition-delay: 500ms;
       transition: all 500ms;
       opacity: 0;
     }
   }
 
-  #contain {
-    margin-top: -10%;
-    position: relative;
+  #back2 {
+    display: none;
   }
 
   .image {
@@ -77,6 +79,7 @@
   #page1 {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -85,7 +88,10 @@
     .logo {
       flex-grow: 1;
       position: relative;
-      transform: scale(1.2);
+
+      .back, .main {
+        width: 125%;
+      }
 
       img {
         left: 50%;
@@ -111,16 +117,18 @@
   #page2 {
     padding-top: 63%;
     position: relative;
+    overflow: hidden;
 
     #movie {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 100%;
       height: 100%;
       background-image: url("../images/film-cover.svg");
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: center -30%;
       background-size: contain;
       margin-top: 7.2%;
     }
@@ -173,16 +181,17 @@
 
   #page5 {
     display: flex;
+    margin-top: 13%;
 
     .image {
       width: 50%;
-      padding-top: 23%;
+      padding-top: 7%;
     }
 
     .text {
       width: 50%;
       padding-right: 8%;
-      margin-top: 21%;
+      margin-top: 8%;
       padding-left: 7%;
     }
 
@@ -190,7 +199,6 @@
     img {
       width: 63%;
       transform: translate(11%, 6%);
-
     }
   }
 
@@ -228,9 +236,145 @@
       }
     }
   }
+}
 
-  #back {
-    position: absolute;
-    top: 0;
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  #main .text {
+    font-size: 1.4vw;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  #main {
+    .text {
+      font-size: 3.3vw;
+
+      .head {
+        font-size: 4vw;
+      }
+    }
+
+    #back {
+      display: none;
+    }
+
+    #back2 {
+      top: 12.7%;
+      display: block;
+    }
+
+    #page1 {
+      .logo .back, .logo .main {
+        width: 1325%;
+      }
+
+      .left, .right {
+        width: 48%;
+      }
+    }
+
+    #page2 {
+      padding-top: 105%;
+
+      #movie {
+        width: 125%;
+      }
+    }
+
+    #page3 {
+      flex-direction: column-reverse;
+
+      .image {
+        width: 100%;
+        flex-direction: row;
+        padding-top: 0;
+      }
+
+      .text {
+        width: 100%;
+        padding: 0 9%;
+      }
+
+      .image-1 {
+        width: 48%;
+        transform: translate(14%, -3%);
+      }
+
+      .image-2 {
+        width: 40%;
+        transform: none;
+      }
+    }
+
+    #page4 {
+      flex-direction: column;
+
+      .image {
+        width: 100%;
+      }
+
+      img {
+        transform: translate(7%, -10%);
+        width: 65%;
+      }
+
+      .text {
+        width: 100%;
+        padding: 0 9%;
+        margin-top: -2%;
+
+        p {
+          margin-bottom: -4%;
+        }
+      }
+    }
+
+    #page5 {
+      flex-direction: column-reverse;
+
+      .image {
+        width: 100%;
+      }
+
+      img {
+        transform: translate(7%, -10%);
+        width: 56%;
+      }
+
+      .text {
+        width: 100%;
+        padding: 0 9%;
+        margin-top: -2%;
+
+        p {
+          margin-bottom: -4%;
+        }
+      }
+    }
+
+    #page6 {
+      flex-direction: column;
+
+      .image {
+        width: 100%;
+      }
+
+      img {
+        transform: translate(-2%, -4%);
+        width: 52%;
+      }
+
+      .text {
+        width: 100%;
+        padding: 0 9%;
+        margin-top: -2%;
+
+        p {
+          margin-bottom: -4%;
+        }
+      }
+    }
   }
 }
