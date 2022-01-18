@@ -2,11 +2,9 @@
   @return "../" + $path;
 }
 
-@import "core/bootstrap";
 @import "colors";
 @import "core/fonts";
 @import "icon";
-@import "core/fullpage.min";
 @import "components/menu";
 @import "components/main";
 
@@ -18,6 +16,8 @@ body, html {
   direction: #{if($is_rtl, rtl, ltr)};
   text-align: #{if($is_rtl, "right", "left")};
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -43,12 +43,12 @@ div {
   flex-direction: row;
 
   #menu {
-    flex-basis: 5%;
+    width: 5%;
     background-color: rgb(92, 45, 122);
   }
 
   #main {
-    flex-basis: 95%;
+    width: 95%;
     overflow: auto;
   }
 }

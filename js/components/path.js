@@ -13,7 +13,7 @@ svg.style.strokeDasharray = length;
 svg.style.strokeDashoffset = length;
 
 main.addEventListener("scroll", function () {
-    var scrollpercent = (main.scrollTop + content.scrollTop) / (main.scrollHeight - main.clientHeight);
+    var scrollpercent = (main.scrollTop - main.clientWidth / 3 + content.scrollTop) / (main.scrollHeight - main.clientWidth / 3 - main.clientHeight);
     var draw = length * scrollpercent;
     svg.style.opacity = 1;
 
