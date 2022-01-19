@@ -16,7 +16,9 @@ main.addEventListener('scroll', function (e) {
         let elem = pages[i]
         if (elem.getBoundingClientRect().top <= 10 && elem.getBoundingClientRect().bottom >= 10) {
             links[i].classList.add("active");
+            if (i === 5) links[6].classList.remove("active");
         } else {
+            if (i === 5) links[6].classList.add("active");
             links[i].classList.remove("active");
         }
     }
