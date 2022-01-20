@@ -43,7 +43,7 @@ div {
   flex-direction: row;
 
   #menu {
-    width: 85px;
+    width: 5%;
     background-color: rgb(92, 45, 122);
   }
 
@@ -94,8 +94,7 @@ div {
     #footer {
       color: white;
       display: none;
-      padding: 5%;
-      height: 20%;
+      padding: 3% 6%;
       flex-wrap: wrap;
       margin-top: 170%;
       background-color: rgb(90, 42, 120);

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: IRANSans;
+  font-family: Peyda;
   font-style: normal;
   font-weight: bold;
   src: url(resource('fonts/peyda/eot/PeydaWeb-Bold.eot'));
@@ -10,29 +10,29 @@
 }
 
 @font-face {
-  font-family: IRANSans;
+  font-family: Peyda;
   font-style: normal;
   font-weight: 500;
-  src: url(resource('fonts/peyda/eot/PeydaWeb-Medium.eot'));
-  src: url(resource('fonts/peyda/eot/PeydaWeb-Medium.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
-  url(resource('fonts/peyda/woff2/PeydaWeb-Medium.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
-  url(resource('fonts/peyda/woff/PeydaWeb-Medium.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-  url(resource('fonts/peyda/ttf/PeydaWeb-Medium.ttf')) format('truetype');
+  src: url(resource('fonts/peyda/eot/PeydaWeb-Regular.eot'));
+  src: url(resource('fonts/peyda/eot/PeydaWeb-Regular.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
+  url(resource('fonts/peyda/woff2/PeydaWeb-Regular.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+  url(resource('fonts/peyda/woff/PeydaWeb-Regular.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url(resource('fonts/peyda/ttf/PeydaWeb-Regular.ttf')) format('truetype');
 }
 
 @font-face {
-  font-family: IRANSans;
+  font-family: Peyda;
   font-style: normal;
   font-weight: 700;
-  src: url(resource('fonts/peyda/eot/PeydaWeb-Black.eot'));
-  src: url(resource('fonts/peyda/eot/PeydaWeb-Black.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
-  url(resource('fonts/peyda/woff2/PeydaWeb-Black.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
-  url(resource('fonts/peyda/woff/PeydaWeb-Black.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-  url(resource('fonts/peyda/ttf/PeydaWeb-Black.ttf')) format('truetype');
+  src: url(resource('fonts/peyda/eot/PeydaWeb-SemiBold.eot'));
+  src: url(resource('fonts/peyda/eot/PeydaWeb-SemiBold.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
+  url(resource('fonts/peyda/woff2/PeydaWeb-SemiBold.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+  url(resource('fonts/peyda/woff/PeydaWeb-SemiBold.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url(resource('fonts/peyda/ttf/PeydaWeb-SemiBold.ttf')) format('truetype');
 }
 
 @font-face {
-  font-family: IRANSans;
+  font-family: Peyda;
   font-style: normal;
   font-weight: 300;
   src: url(resource('fonts/peyda/eot/peydaWeb-light.eot'));
@@ -43,23 +43,23 @@
 }
 
 @font-face {
-  font-family: IRANSans;
+  font-family: Peyda;
   font-style: normal;
   font-weight: 200;
-  src: url(resource('fonts/pedya/eot/peydaWeb-extralight.eot'));
-  src: url(resource('fonts/pedya/eot/peydaWeb-extralight.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
-  url(resource('fonts/pedya/woff2/peydaWeb-extralight.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
-  url(resource('fonts/pedya/woff/peydaWeb-extralight.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-  url(resource('fonts/pedya/ttf/peydaWeb-extralight.ttf')) format('truetype');
+  src: url(resource('fonts/peyda/eot/peydaWeb-extralight.eot'));
+  src: url(resource('fonts/peyda/eot/peydaWeb-extralight.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
+  url(resource('fonts/peyda/woff2/peydaWeb-extralight.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+  url(resource('fonts/peyda/woff/peydaWeb-extralight.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url(resource('fonts/peyda/ttf/peydaWeb-extralight.ttf')) format('truetype');
 }
 
 @font-face {
-  font-family: IRANSans;
+  font-family: Peyda;
   font-style: normal;
-  font-weight: normal;
-  src: url(resource('fonts/pedya/eot/PeydaWeb-Regular.eot'));
-  src: url(resource('fonts/pedya/eot/PeydaWeb-Regular.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
-  url(resource('fonts/pedya/woff2/PeydaWeb-Regular.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
-  url(resource('fonts/pedya/woff/PeydaWeb-Regular.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-  url(resource('fonts/pedya/ttf/PeydaWeb-Regular.ttf')) format('truetype');
+  font-weight: 600;
+  src: url(resource('fonts/peyda/eot/PeydaWeb-Medium.eot'));
+  src: url(resource('fonts/peyda/eot/PeydaWeb-Medium.eot?#iefix')) format('embedded-opentype'), /* IE6-8 */
+  url(resource('fonts/peyda/woff2/PeydaWeb-Medium.woff2')) format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+  url(resource('fonts/peyda/woff/PeydaWeb-Medium.woff')) format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url(resource('fonts/peyda/ttf/PeydaWeb-Medium.ttf')) format('truetype');
 }

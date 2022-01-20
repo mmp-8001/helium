@@ -307,7 +307,7 @@
       }
 
       .row-3 {
-        margin-top: 2%;
+        margin-top: 5%;
         display: flex;
         justify-content: left;
         column-gap: 2%;
@@ -316,11 +316,13 @@
       #submit {
         transition: background-color 250ms;
         cursor: pointer;
-        padding: 0.9% 5%;
         height: 100%;
         font-size: 1.2vw;
+        border: none;
         color: white;
         background-color: #e3ab4e;
+        border-radius: 7px;
+        width: 15%;
 
         &:hover {
           background-color: #ce9227;
@@ -333,10 +335,15 @@
         }
       }
 
+      button {
+        padding: 1% 1%;
+      }
+
       #attach {
+        border: none;
         cursor: pointer;
+        border-radius: 7px;
         font-size: 1.5vw;
-        padding: 1% .8%;
         color: white;
         background-color: #e3ab4e;
         transition: background-color 250ms;
@@ -366,13 +373,21 @@
         font-weight: 700;
       }
 
-      input, textarea, button {
+      input, textarea {
         resize: none;
         border-radius: 7px;
         height: 100%;
-        padding: 3%;
+        font-size: 1.2vw;
         background-color: transparent;
         border: 2px solid rgb(231, 169, 62);
+      }
+
+      input {
+        padding: 2% 2%;
+      }
+
+      textarea {
+        padding: 1% 0.5%;
       }
 
       .name {
@@ -561,8 +576,13 @@
 
     #page7 {
       .form {
+        input, textarea {
+          font-size: 2.2vw;
+        }
+
         #submit {
-          font-size: 2.6vw;
+          font-size: 3.1vw;
+          width: 30%;
         }
 
         #attach {
