@@ -50,6 +50,52 @@ div {
   #main {
     width: 95%;
     overflow: auto;
+
+    #header {
+      display: none;
+      background-color: rgb(92, 45, 122);
+
+      .space {
+        margin-left: auto;
+      }
+
+      .contact {
+        margin-right: auto;
+        font-size: 6vw;
+        color: white;
+
+        span {
+          cursor: pointer;
+          transition: color 250ms;
+
+          &:hover {
+            color: #ce9227;
+          }
+        }
+      }
+
+      div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        padding: 1%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    #footer {
+      height: 20%;
+      margin-top: 170%;
+      background-color: rgb(92, 45, 122);
+    }
   }
 }
 
@@ -57,5 +103,9 @@ div {
 @media (max-width: 767.98px) {
   #whole #main {
     width: 100%;
+
+    #header {
+      display: flex;
+    }
   }
 }

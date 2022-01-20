@@ -9,7 +9,9 @@
 <body>
 <div id="whole">
     <div id="menu">
-        <div class="logo"><img height="150" src="images/logo-side.svg" alt="logo"></div>
+        <div class="logo">
+            <img height="150" src="images/logo-side.svg" alt="logo">
+        </div>
         <div class="links">
             <a href="#page1" class="link">
                 <div class="left_flip icon icon-home"></div>
@@ -40,6 +42,14 @@
         </div>
     </div>
     <div id="main">
+        <div id="header">
+            <div class="space"></div>
+            <div class="logo"><img src="images/logo-head.svg" alt="logo mobile"></div>
+            <div class="contact">
+                <span class="icon-instagram"></span>
+                <span class="icon-world"></span>
+            </div>
+        </div>
         <div id="content">
             <svg id="back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1711.75 5715.71">
                 <defs>
@@ -79,8 +89,12 @@
                     <img id="man4" src="./images/image-man4.png" alt="excited man number">
                 </div>
                 <div class="logo">
-                    <img class="back" src="./images/logo-back.png" alt="logo background">
-                    <img class="main" src="./images/main-logo.png" alt="logo text">
+                    <div class="container back">
+                        <img id="logo-back" src="./images/logo-back.png" alt="logo background">
+                    </div>
+                    <div class="container main">
+                        <img id="logo-front" src="./images/main-logo.png" alt="logo text">
+                    </div>
                 </div>
                 <div class="left">
                     <img id="man2" src="./images/image-man2.png" alt="excited man number">
@@ -180,6 +194,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="footer">
+            <div class="info">{{footer-info}}</div>
+            <div class="contact">
+                <a href="http://www.heliumpark.ir/"><i class="icon-world"></i>http://heliumpark.ir/</a>
+                <a href="mailto:heliumfestival@gmail.com"><i class="icon-ma"></i>heliumfestival@gmail.com</a>
+                <a href="https://www.instagram.com/helium_park_iran">helium_park_iran</a>
+            </div>
+            <div class="copy-right">{{footer-copy-right}}</div>
         </div>
     </div>
 </div>
