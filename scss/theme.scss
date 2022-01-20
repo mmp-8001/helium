@@ -92,9 +92,43 @@ div {
     }
 
     #footer {
+      color: white;
+      display: none;
+      padding: 5%;
       height: 20%;
+      flex-wrap: wrap;
       margin-top: 170%;
-      background-color: rgb(92, 45, 122);
+      background-color: rgb(90, 42, 120);
+
+      a {
+        display: flex;
+      }
+
+      i {
+        margin-right: 3%;
+      }
+
+      .info {
+        width: 50%;
+        text-align: justify;
+      }
+
+      .contact {
+        direction: ltr;
+        width: 50%;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+      }
+
+      .copy-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        color: rgb(128, 75, 146);
+      }
     }
   }
 }
@@ -107,5 +141,10 @@ div {
     #header {
       display: flex;
     }
+
+    #footer {
+      display: flex;
+    }
+
   }
 }
