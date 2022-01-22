@@ -5,15 +5,12 @@
 }
 
 #main {
-  background-image: url("../images/background.png");
-  background-repeat: repeat;
   height: 100%;
 
   .tile {
     opacity: 0;
     transform: translateY(-50px);
-    transition-property: all;
-    transition-duration: 400ms;
+    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
 
     &.inView {
       opacity: 1;
@@ -30,8 +27,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    top: 6%;
-    height: 115%;
+    top: 14.1%;
 
     #svgPath, #svgPath2 {
       transition-delay: 500ms;
@@ -223,7 +219,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-bottom: 35%;
+    margin-bottom: 10%;
 
     .image {
       width: 50%;
@@ -240,58 +236,14 @@
       width: 60%;
       transform: translate(-23%, 5%);
     }
-
-    .judges {
-      position: absolute;
-      height: 100%;
-      top: 80%;
-      display: flex;
-      width: 100%;
-      padding: 0 7%;
-
-      .name {
-        font-weight: 600;
-        font-size: 1.5vw;
-        color: #242424;
-      }
-
-      .image {
-        width: 25%;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          transform: none;
-          width: 100%;
-        }
-      }
-
-      .judge-1, .judge-2 {
-        display: flex;
-        width: 50%;
-        column-gap: 6%;
-
-        .name {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-        }
-      }
-    }
   }
 
   #page7 {
-
-    position: relative;
-
     .form {
-      position: absolute;
       display: flex;
       flex-direction: column;
       width: 100%;
-      padding: 10% 7%;
+      padding: 25% 7% 10% 7%;
 
       .row-1, .row-2 {
         width: 100%;
@@ -440,7 +392,7 @@
     }
 
     #back2 {
-      top: 5.9%;
+      top: 11.2%;
       display: block;
     }
 
@@ -518,7 +470,7 @@
       }
 
       img {
-        transform: translate(7%, -10%);
+        transform: translate(3%, -3%);
         width: 56%;
       }
 
@@ -535,7 +487,6 @@
 
     #page6 {
       flex-direction: column;
-      margin-bottom: 90%;
 
       .image {
         width: 100%;
@@ -544,23 +495,6 @@
       img {
         transform: translate(-2%, -4%);
         width: 52%;
-      }
-
-      .judges {
-        row-gap: 18%;
-        position: absolute;
-        height: 100%;
-        top: 106%;
-        flex-direction: column;
-        display: flex;
-        width: 100%;
-        padding: 17%;
-
-        .judge-1, .judge-2 {
-          display: flex;
-          width: 105%;
-          column-gap: 6%;
-        }
       }
 
       .text {
@@ -577,11 +511,11 @@
     #page7 {
       .form {
         input, textarea {
-          font-size: 2.2vw;
+          font-size: 3.5vw;
         }
 
         #submit {
-          font-size: 3.1vw;
+          font-size: 3.8vw;
           width: 30%;
         }
 
@@ -590,7 +524,7 @@
         }
 
         label {
-          font-size: 3.1vw;
+          font-size: 3.3vw;
         }
 
         .row-1 {
