@@ -291,7 +291,9 @@
         padding: 1% 1%;
       }
 
-      #attach {
+      .file-upload {
+        padding: 1% 1%;
+        display: flex;
         border: none;
         cursor: pointer;
         border-radius: 7px;
@@ -309,6 +311,10 @@
         &:hover {
           background-color: #ce9227;
         }
+      }
+
+      #attach {
+        display: none;
       }
 
       .row-1 {
@@ -519,7 +525,7 @@
           width: 30%;
         }
 
-        #attach {
+        .file-upload {
           font-size: 3.5vw;
         }
 
