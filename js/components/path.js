@@ -16,7 +16,7 @@ svg.style.strokeDashoffset = length;
 svg2.style.strokeDashoffset = length;
 
 function pathdraw() {
-    var scrollpercent = (main.scrollTop - main.clientWidth / 3 + content.scrollTop) / (main.scrollHeight - main.clientWidth / 3 - main.clientHeight);
+    var scrollpercent = (main.scrollTop - main.clientWidth / 100 + content.scrollTop) / (main.scrollHeight - main.clientWidth / 100 - main.clientHeight);
     var draw = length * scrollpercent;
     svg.style.opacity = 1;
     svg2.style.opacity = 1;

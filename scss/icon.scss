@@ -57,7 +57,7 @@
 }
 
 .icon-world:before { content: '\e800'; } /* '' */
-.icon-cup:before { content: '\e801'; } /* '' */
+.icon-cup:before { content: '\e801';transform: translateY(4%) } /* '' */
 .icon-hammer:before { content: '\e802'; transform: translate(4%, -4%);} /* '' */
 .icon-home:before { content: '\e803'; } /* '' */
 .icon-instagram:before { content: '\e804'; } /* '' */
