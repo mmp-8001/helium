@@ -51,14 +51,14 @@
 
     .link {
       position: relative;
-      width: 110%;
+      width: 95%;
       height: 0;
-      padding-top: 110%;
+      padding-top: 95%;
       border-radius: 100%;
       cursor: pointer;
       transition: background-color 250ms ease-in-out;
       background-color: rgb(255, 255, 255);
-      font-size: 1.5vw;
+      font-size: 1.35vw;
 
       &:not(&:last-child):after {
         content: "";

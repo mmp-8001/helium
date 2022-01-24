@@ -54,9 +54,16 @@ div {
     width: 95%;
     overflow: auto;
 
-    #header {
+    #fakeHeader {
+      opacity: 0;
+    }
+    #header, #fakeHeader {
       display: none;
       background-color: rgb(92, 45, 122);
+
+      .flex-wrapper {
+        display: flex;
+      }
 
       .space {
         margin-left: auto;
@@ -90,15 +97,16 @@ div {
         img {
           width: 100%;
           height: auto;
+          margin-right: 10%;
+          margin-left: -10%;
         }
       }
     }
 
     #footer {
-      color: white;
-      display: none;
+      display: block;
       font-size: 3vw;
-      padding: 3% 6%;
+      padding: 6%;
       flex-wrap: wrap;
       background-color: rgb(61, 42, 94);
 
@@ -143,8 +151,18 @@ div {
   #whole #main {
     width: 100%;
 
-    #header {
+    #fakeHeader {
       display: flex;
+    }
+    #header {
+      display: block;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      overflow: hidden;
+      z-index: 99;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
     #footer {
