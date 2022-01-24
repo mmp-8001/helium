@@ -284,7 +284,16 @@
         width: 100%;
         display: flex;
         column-gap: 2%;
+
+        .row-1-2 {
+          width: 100%;
+          column-gap: 2%;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+        }
       }
+
 
       .row-2 {
         display: flex;
@@ -392,11 +401,11 @@
       }
 
       .age {
-        width: 5%;
+        width: 10%;
       }
 
       .city {
-        width: 10%;
+        width: 15%;
       }
 
       .how {
@@ -635,7 +644,7 @@
         }
 
         .how {
-          flex-grow: 1;
+          width: 49%;
         }
 
         #info {
