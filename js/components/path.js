@@ -5,7 +5,7 @@ const main = document.getElementById("main");
 const content = document.getElementById("content");
 const page1 = document.getElementById("page1");
 
-const length = svg.getTotalLength();
+var length = svg.getTotalLength();
 
 // start positioning of svg drawing
 svg.style.strokeDasharray = length;
@@ -16,7 +16,7 @@ svg.style.strokeDashoffset = length;
 svg2.style.strokeDashoffset = length;
 
 function pathdraw() {
-    var scrollpercent = (main.scrollTop - main.clientWidth / 100 + content.scrollTop) / (main.scrollHeight - main.clientWidth / 100 - main.clientHeight);
+    var scrollpercent = (main.scrollTop - main.clientWidth / 10 + content.scrollTop) / (main.scrollHeight - main.clientWidth / 10 - main.clientHeight);
     var draw = length * scrollpercent;
     svg.style.opacity = 1;
     svg2.style.opacity = 1;

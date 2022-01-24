@@ -9,7 +9,7 @@
 
   .tile {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-10%);
     transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
 
     &.inView {
@@ -45,14 +45,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 50%;
+    position: relative;
   }
 
   .text {
+    position: relative;
     font-size: 1.5vw;
     font-weight: 700;
     color: #242424;
     text-align: justify;
     word-spacing: -0.1vw;
+    padding-top: 50%;
 
     .plus {
       padding-left: 1%;
@@ -120,21 +124,17 @@
   }
 
   #page2 {
-    padding-top: 60%;
+    padding-top: 50%;
     position: relative;
+    margin-top: 14%;
 
     #movie {
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       width: 100%;
-      height: 100%;
-      background-image: url("../images/film-cover.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      margin-top: 7.2%;
+      height: auto;
     }
   }
 
@@ -144,39 +144,59 @@
 
     .image {
       width: 50%;
-      padding-top: 8%;
+
+      .image-inside {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+      }
     }
 
     .text {
       width: 50%;
-      padding-right: 8%;
-      margin-top: 9%;
+
+      .text-inside {
+        right: 10%;
+        top: 12%;
+        position: absolute;
+      }
     }
 
     .image-1 {
-      transform: translate(3%, -13%);
-      width: 70%;
+      transform: translate(-23%, -14%);
+      width: 75%;
     }
 
     .image-2 {
-      width: 57%;
-      transform: translate(-5%, -4%);
+      width: 63%;
+      transform: translate(-47%, -4%);
     }
   }
 
   #page4 {
     display: flex;
-    margin-top: 5%;
+    margin-top: 7%;
 
     .image {
       width: 50%;
-      padding-top: 17%;
+
+      .image-inside {
+        right: 10%;
+        width: 100%;
+        top: 27%;
+        position: absolute;
+      }
     }
 
     .text {
       width: 50%;
-      margin-top: 9%;
-      padding-left: 7%;
+      position: relative;
+
+      .text-inside {
+        left: 10%;
+        top: 17%;
+        position: absolute;
+      }
     }
 
     img {
@@ -187,24 +207,33 @@
 
   #page5 {
     display: flex;
-    margin-top: 9%;
+    margin-top: 8%;
 
     .image {
       width: 50%;
-      padding-top: 11%;
+
+      .image-inside {
+        position: absolute;
+        left: 10%;
+        top: 16%;
+        width: 100%;
+      }
     }
 
     .text {
       width: 50%;
-      padding-right: 8%;
-      margin-top: 12%;
-      padding-left: 7%;
+
+      .text-inside {
+        top: 26%;
+        right: 10%;
+        position: absolute;
+      }
     }
 
 
     img {
       width: 63%;
-      transform: translate(11%, 6%);
+      transform: translate(-31%, 6%);
     }
   }
 
@@ -212,18 +241,28 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-bottom: 10%;
-    margin-top: 3%;
 
     .image {
       width: 50%;
-      padding-top: 14%;
+
+      .image-inside {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        right: 10%;
+      }
     }
 
     .text {
       width: 50%;
-      margin-top: 18%;
-      padding-left: 11%;
+      padding-top: 50%;
+      position: relative;
+
+      .text-inside {
+        top: 10%;
+        left: 10%;
+        position: absolute;
+      }
     }
 
     img {
@@ -381,6 +420,7 @@
   #main {
     .text {
       font-size: 3.3vw;
+      padding-top: 80%;
 
       .head {
         font-size: 4vw;
@@ -392,7 +432,7 @@
     }
 
     #back2 {
-      top: 11.2%;
+      top: 9.2%;
       display: block;
     }
 
@@ -415,8 +455,7 @@
     }
 
     #page2 {
-      padding-top: 105%;
-      overflow: hidden;
+      margin-top: 26%;
 
       #movie {
         width: 125%;
@@ -425,35 +464,48 @@
 
     #page3 {
       flex-direction: column-reverse;
+      margin-top: 7%;
 
       .image {
         width: 100%;
         flex-direction: row;
-        padding-top: 0;
+
+        .image-inside {
+          left: 0;
+        }
       }
 
       .text {
         width: 100%;
-        padding: 0 9%;
+
+        .text-inside {
+          top: -9%;
+          right: 10%;
+          left: 10%;
+        }
       }
 
       .image-1 {
         width: 48%;
-        transform: translate(14%, -3%);
+        transform: translate(2%, -3%);
       }
 
       .image-2 {
+        transform: translate(-12%, -9%);
         width: 40%;
-        transform: none;
       }
     }
 
     #page4 {
+      margin-top: -6%;
       flex-direction: column;
 
       .image {
-        padding-top: 6%;
         width: 100%;
+
+        .image-inside {
+          right: 19%;
+        }
       }
 
       img {
@@ -463,8 +515,12 @@
 
       .text {
         width: 100%;
-        padding: 0 9%;
-        margin-top: -2%;
+
+        .text-inside {
+          top: 20%;
+          right: 10%;
+          left: 10%;
+        }
 
         p {
           margin-bottom: -4%;
@@ -477,6 +533,11 @@
 
       .image {
         width: 100%;
+
+        .image-inside {
+          left: -21%;
+          top: 45%;
+        }
       }
 
       img {
@@ -486,8 +547,12 @@
 
       .text {
         width: 100%;
-        padding: 0 9%;
-        margin-top: -2%;
+
+        .text-inside {
+          right: 10%;
+          left: 10%;
+          top: 35%;
+        }
 
         p {
           margin-bottom: -4%;
@@ -500,6 +565,11 @@
 
       .image {
         width: 100%;
+
+        .image-inside {
+          top: 43%;
+          right: 23%;
+        }
       }
 
       img {
@@ -509,8 +579,12 @@
 
       .text {
         width: 100%;
-        padding: 0 9%;
-        margin-top: -2%;
+
+        .text-inside {
+          top: 35%;
+          left: 10%;
+          right: 10%;
+        }
 
         p {
           margin-bottom: -4%;
