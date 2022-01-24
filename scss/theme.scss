@@ -57,6 +57,7 @@ div {
     #fakeHeader {
       opacity: 0;
     }
+
     #header, #fakeHeader {
       display: none;
       background-color: rgb(92, 45, 122);
@@ -104,9 +105,10 @@ div {
     }
 
     #footer {
-      display: block;
-      font-size: 3vw;
-      padding: 6%;
+      display: flex;
+      font-size: 1.5vw;
+      padding: 4% 7% 2% 7%;
+      color: white;
       flex-wrap: wrap;
       background-color: rgb(61, 42, 94);
 
@@ -138,7 +140,7 @@ div {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        margin-top: 3%;
         text-align: center;
         color: rgb(128, 75, 146);
       }
@@ -154,6 +156,7 @@ div {
     #fakeHeader {
       display: flex;
     }
+
     #header {
       display: block;
       position: fixed;
@@ -162,12 +165,16 @@ div {
       left: 0;
       overflow: hidden;
       z-index: 99;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
     }
 
     #footer {
-      display: flex;
-    }
+      font-size: 3vw;
+      padding: 6%;
 
+      .copy-right {
+        margin-top: 10%;
+      }
+    }
   }
 }
