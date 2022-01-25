@@ -59,6 +59,15 @@
     word-spacing: -0.1vw;
     padding-top: 50%;
 
+    .important {
+      color: #ff4545;
+    }
+
+    .so-important {
+      color: #ff4545;
+      font-size: 1.8vw;
+    }
+
     .plus {
       padding-left: 1%;
       font-size: 150%;
@@ -127,7 +136,16 @@
   #page2 {
     padding-top: 50%;
     position: relative;
-    margin-top: 14%;
+    margin-top: 13%;
+
+    #video {
+      position: absolute;
+      top: 51%;
+      left: 49.5%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 72%;
+    }
 
     #movie {
       position: absolute;
@@ -141,7 +159,7 @@
 
   #page3 {
     display: flex;
-    margin-top: 4%;
+    margin-top: 5%;
 
     .image {
       width: 50%;
@@ -433,6 +451,10 @@
       font-size: 3.3vw;
       padding-top: 80%;
 
+      .so-important {
+        font-size: 3.8vw;
+      }
+
       .head {
         font-size: 4vw;
       }
@@ -467,6 +489,10 @@
 
     #page2 {
       margin-top: 26%;
+
+      #video {
+        width: 91%;
+      }
 
       #movie {
         width: 125%;
