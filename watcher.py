@@ -7,15 +7,10 @@ import codecs
 def blade():
     theme = (open("theme.html", "r")).read()
     theme_rtl = theme
-    theme_ltr = theme
     data = pd.read_csv("lang.csv")
     for i in range(data.shape[0]):
-        theme_ltr = theme_ltr.replace("{{" + data.iloc[i, 0] + "}}", data.iloc[i, 1])
         theme_rtl = theme_rtl.replace("{{" + data.iloc[i, 0] + "}}", data.iloc[i, 2])
-    f = codecs.open("theme-ltr.html", 'w', encoding='utf8')
-    f.write(theme_ltr)
-    f.close()
-    f = codecs.open("theme-rtl.html", 'w', encoding='utf')
+    f = codecs.open("index.html", 'w', encoding='utf')
     f.write(theme_rtl)
     f.close()
 

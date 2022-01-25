@@ -1,7 +1,6 @@
 .idea
 design
 node_modules
-theme-ltr.html
-theme-rtl.html
+index.html
 css
 js/main.js
