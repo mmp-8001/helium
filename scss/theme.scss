@@ -166,21 +166,12 @@ div {
   }
 }
 
-#format-error {
-  width: 45%;
-  height: 35%;
-
-  .body {
-    width: 85%;
-  }
-}
-
-#success-msg {
+#success {
   width: 35%;
   height: 30%;
 }
 
-#failed-error {
+#error {
   width: 45%;
   height: 35%;
 
@@ -245,7 +236,7 @@ div {
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
 
-  #format-error {
+  #error {
     width: 85%;
     height: 25%;
 
@@ -254,18 +245,9 @@ div {
     }
   }
 
-  #success-msg {
+  #success {
     width: 80%;
     height: 25%;
-  }
-
-  #failed-error {
-    width: 85%;
-    height: 25%;
-
-    .body {
-      width: 90%;
-    }
   }
   .upload-msg {
     font-size: 4vw;

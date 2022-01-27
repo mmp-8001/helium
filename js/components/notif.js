@@ -1,7 +1,6 @@
 const overlay = document.getElementById("overlay")
-const success = document.getElementById("success-msg")
-const format = document.getElementById("format-error")
-const fail = document.getElementById("failed-error")
+const success = document.getElementById("success")
+const error = document.getElementById("error")
 const buttons = overlay.querySelectorAll("button")
 
 
@@ -12,15 +11,15 @@ for (let button of buttons) {
     }
 }
 
-function notif(type) {
+function notif(type, msg) {
     if (type === "success") {
         overlay.classList.add("trigger")
         success.classList.add("occur")
-    } else if (type === "format") {
+    } else if (type === "error") {
         overlay.classList.add("trigger")
-        format.classList.add("occur")
-    } else if (type === "failed") {
-        overlay.classList.add("trigger")
-        fail.classList.add("occur")
+        error.querySelectorAll(".head")[0].innerHTML = msg
+        error.classList.add("occur")
     }
 }
+
+const myTimeout = setTimeout(notif, 500, "error", "salam salam salam salam salam");

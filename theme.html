@@ -8,17 +8,12 @@
 </head>
 <body>
 <div id="overlay">
-    <div class="upload-msg" id="format-error">
-        <div class="red"><span>{{upload-format-head}}</span></div>
-        <div class="body"><span>{{upload-format-msg}}</span></div>
+    <div class="upload-msg" id="error">
+        <div class="red"><span class="head">{{upload-format-head}}</span></div>
+        <div class="body"><span>{{upload-error-msg}}</span></div>
         <button>{{upload-accept}}</button>
     </div>
-    <div class="upload-msg" id="failed-error">
-        <div class="red"><span>{{upload-fail-head}}</span></div>
-        <div class="body"><span>{{upload-fail-msg}}</span></div>
-        <button>{{upload-accept}}</button>
-    </div>
-    <div class="upload-msg" id="success-msg">
+    <div class="upload-msg" id="success">
         <div class="green"><span>{{upload-success-head}}</span></div>
         <div><span>{{upload-success-msg}}</span></div>
         <button>{{upload-accept}}</button>
