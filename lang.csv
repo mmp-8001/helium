@@ -34,3 +34,10 @@ form-info, hi, توضیحات
 form-send, hi, ارسال اثر
 footer-info, hi, جهت اطلاعات و آشنایی بیشتر، به اینستاگرام هلیوم پارک سربزنید و یا با شماره 09129596631 تماس بگیرید.
 footer-copy-right, hi, تمامی حقوق این سایت برای هلیوم پارک محفوظ می‌باشد
+upload-accept, hi, تایید
+upload-success-head, hi, فایل شما با موفقیت ارسال شد
+upload-success-msg, hi, ممنون از شرکت شما
+upload-fail-head, hi, متاسفانه ارسال فایل دچار مشکل شد
+upload-fail-msg, hi, لطفا دوباره تلاش کنید و در صورت بروز مشکل به آدرس heliumfestivall@yahoo.com ارسال کنید
+upload-format-head, hi, فرمت ارسالی اشتباه است
+upload-format-msg, hi, فقط فایل‌های فشرده (rar، zip) قابل ارسال است. لطفا آثار خود را در یک فایل فشرده ارسال کنید
