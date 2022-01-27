@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.25.0",
     "http-server": "^14.1.0"
   }
 }

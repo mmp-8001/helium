@@ -1,14 +1,14 @@
 const progress = document.getElementById("progress-bar")
 
-function init() {
-    progress.parentElement.style = "block"
+export function init() {
+    progress.parentElement.style.display = "block"
 }
 
-function progress(x) {
+export function setProgress(x) {
     progress.style.width = x + "%"
 }
 
-function destroy() {
+export function destroy() {
     progress.style.width = "0"
-    progress.parentElement.style = "none"
+    progress.parentElement.style.display = "none"
 }

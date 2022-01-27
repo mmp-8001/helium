@@ -2,6 +2,8 @@
 <html lang="{{html_lang}}">
 <head>
     <meta charset="utf-8">
+    <meta name="Description" CONTENT="سایت اطلاع رسانی و شرکت در مسابقه طراحی لوگو هلیوم پارک">
+    <meta name="keywords" content="فراخوان طراحی لوگو هلیوم پارک">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/theme-{{direction}}.css?ver={{version}}">
     <title>{{title}}</title>
@@ -9,7 +11,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7X9L7PGT2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
         gtag('config', 'G-W7X9L7PGT2');
     </script>
@@ -27,6 +33,7 @@
         <button>{{upload-accept}}</button>
     </div>
 </div>
+<h1 style="display: none">مسابقه طراحی لوگو هلیوم پارک</h1>
 <div id="whole">
     <div id="menu">
         <div class="logo">
@@ -207,44 +214,46 @@
             </div>
             <div id="page7">
                 <div class="form">
-                    <div class="row-1">
-                        <div class="name">
-                            <label for="name">{{form-name}}</label>
-                            <input id="name" type="text">
-                        </div>
-                        <div class="phone">
-                            <label for="phone">{{form-phone}}</label>
-                            <input id="phone" type="text">
-                        </div>
-                        <div class="row-1-2">
-                            <div class="age">
-                                <label for="age">{{form-age}}</label>
-                                <input id="age" type="text">
+                    <form id="myForm" method="post" action="" enctype="multipart/form-data">
+                        <div class="row-1">
+                            <div class="name">
+                                <label for="name">{{form-name}}</label>
+                                <input id="name" type="text" name="name">
                             </div>
-                            <div class="city">
-                                <label for="city">{{form-city}}</label>
-                                <input id="city" type="text">
+                            <div class="phone">
+                                <label for="phone">{{form-phone}}</label>
+                                <input id="phone" type="text" name="phone">
                             </div>
-                            <div class="how">
-                                <label for="how">{{form-how}}</label>
-                                <input id="how" type="text">
+                            <div class="row-1-2">
+                                <div class="age">
+                                    <label for="age">{{form-age}}</label>
+                                    <input id="age" type="text" name="age">
+                                </div>
+                                <div class="city">
+                                    <label for="city">{{form-city}}</label>
+                                    <input id="city" type="text" name="city">
+                                </div>
+                                <div class="how">
+                                    <label for="how">{{form-how}}</label>
+                                    <input id="how" type="text" name="method">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row-2">
-                        <label for="info">{{form-info}}</label>
-                        <textarea id="info" rows="3" type="text"></textarea>
-                    </div>
-                    <div class="row-3">
-                        <div class="progress-container">
-                            <div id="progress-bar"></div>
+                        <div class="row-2">
+                            <label for="info">{{form-info}}</label>
+                            <textarea id="info" rows="3" type="text" name="desc"></textarea>
                         </div>
-                        <label class="file-upload">
-                            <input id="attach" type="file"/>
-                            <span class="icon-pin"></span>
-                        </label>
-                        <button id="submit">{{form-send}}</button>
-                    </div>
+                        <div class="row-3">
+                            <div class="progress-container">
+                                <div id="progress-bar"></div>
+                            </div>
+                            <label class="file-upload">
+                                <input id="attach" type="file" name="file"/>
+                                <span class="icon-pin"></span>
+                            </label>
+                            <button id="submit">{{form-send}}</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
